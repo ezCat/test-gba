@@ -1,9 +1,6 @@
 /* ###############################
    ####### GENERAL STYLES ########
    ############################### */
-*{
-  font-family: Open Sans;
-}
 
 body{
   margin: 0;
@@ -14,10 +11,6 @@ h1, h2, h3, h4, h5, h6{
   margin-bottom: 30px;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
-}
-
-.italic{
-  font-style: italic;
 }
 
 #wrapper {
@@ -47,6 +40,7 @@ h1, h2, h3, h4, h5, h6{
     
     }
   
+  
     .navbar-side {
         z-index: 1;
         position: absolute;
@@ -60,20 +54,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 
-/* ###########################
-   ####  DATA TABLE  #####
-   ########################### */
 
-.dataTables_scrollBody thead{
-    visibility:hidden;
-}
-
-.group{
-    background-color:#333!important;
-    font-size:11px;
-    color:#fff!important;
-    opacity:0.7;
-}
 
 
 
@@ -119,20 +100,12 @@ input[type=date] {
   outline: none !important;
 }
 
-.supprimer-click{
-  text-align: center;
-}
-
 .tab-number{
   width: 50px;
 }
 
 .h_sum{
   width: 70px;
-}
-
-.add_livrable{
-  padding: 5px;
 }
 
 .btn {
@@ -177,16 +150,16 @@ input[type=date] {
 }
 
 .btn-circle {
-  width: 50px;
-  height: 50px;
-  padding: 6px 0;
-  -webkit-border-radius: 25px;
-  -moz-border-radius: 25px;
-  border-radius: 25px;
-  text-align: center;
-  font-size: 12px;
-  line-height: 1.428571429;
-  border: none;
+width: 50px;
+height: 50px;
+padding: 6px 0;
+-webkit-border-radius: 25px;
+-moz-border-radius: 25px;
+border-radius: 25px;
+text-align: center;
+font-size: 12px;
+line-height: 1.428571429;
+border: none;
 }
 
 .btn-close{
@@ -196,8 +169,8 @@ input[type=date] {
   -moz-border-radius: 35px;
   margin-top: 20px;
   background-color: transparent;
-  color: #4D4D4D;
-  border: 1px solid #4D4D4D;
+  color: white;
+  border: 1px solid #F6F6F6;
 }
 
 #btn-close-modal{
@@ -213,33 +186,7 @@ input[type=date] {
   border-radius: 10px;
 }
 
-.btn-blue-green{
-  background-color: #1abc9c;
-  color: #fff;
-}
 
-.btn-blue-green:hover{
-  color: #fff;
-  opacity: 0.9;
-}
-
-.btn-inverse{
-  background-color: #415b76;
-  color: #fff;
-}
-
-.btn-inverse:hover{
-  color: #fff;
-  opacity: 0.9;
-}
-
-  .width-input-text{
-    width: 100%;
-  }
-
-  .width-input-number{
-    width: 100%;
-  }
 
 
 
@@ -296,13 +243,11 @@ input[type=date] {
 
 .light-orange{
   background-color: #F89406;
-  color: #fff;
 }
 
 .dark-grey{
   background-color: #4a545e;
 }
-
 
 /* MASTER */
 
@@ -344,15 +289,6 @@ input[type=date] {
 
 .back-dash-content{
   padding: 20px;
-  height: 270px;
-}
-
-.back-dash-sub-content{
-  height: 130px;
-}
-
-.back-dash-sub-comment{
-  height: 100px;
 }
 
 /* COLOR */
@@ -384,7 +320,7 @@ input[type=date] {
 
 /* ###########################
    #######    MODAL   ########
-   ###########################*/
+   ########################### */
 
 .modal-content.dark{
   margin: 80px;
@@ -392,11 +328,11 @@ input[type=date] {
   box-shadow: none;
   border: none;
   padding: 30px;
-  color: #4D4D4D;
+  color: #F6F6F6;
 }
 
 .modal-content.dark > table{
-  color: #4D4D4D;
+  color: #F6F6F6;
 }
 
 
@@ -507,38 +443,6 @@ background-color: #FFF;
   text-align: center;
   color: #fff;
 }
-
-.input-modal{
-  margin:0;
-  width: 100%;
-}
-
-
-/* ###########################
-   ####### RESPONSIVE ########
-   ########################### */
-
-@media screen and (max-width: 1400px){
-
-  .table{
-    font-size: 12;
-  }
-
-  .width-input-text{
-    width: 100%;
-  }
-
-  .width-input-number{
-    width: 100%;
-  }
-
-  .check-tab{
-    padding: 0;
-  }
-
-
-}
-
 
 
 
@@ -708,5 +612,3 @@ footer a, footer a:link {
   color: #fff;
   text-decoration: none;
 }
-
-

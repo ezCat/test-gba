@@ -27,7 +27,7 @@
           </thead>
 
           <tbody>
-             <tr class="italic">
+             <tr>
               <td>LHP N4</td>
               <td>Soldé</td>
             </tr> 
@@ -61,7 +61,7 @@
           </thead>
 
           <tbody>
-            <tr class="italic">
+            <tr>
               <td style="width: 28%">LHP N4</td>
               <td style="width: 28%">14 000 €</td>
               <td style="width: 28%">15 550 €</td>
@@ -94,7 +94,7 @@
           </thead>
 
           <tbody>
-            <tr class="italic">
+            <tr>
               <td style="width: 28%">LHP N4</td>
               <td style="width: 28%">140 h</td>
               <td style="width: 28%">160 h</td>
@@ -133,34 +133,25 @@
              <tr>
               <th>Fournisseur</th>
               <th>Nom du projet</th>
-              <th>Montant (en €)</th>
+              <th>Montant</th>
             </tr> 
           </thead>
 
           <tbody>
              <tr>
               <td>Fournisseur X</td>
-              <td class="italic">LHP N4</td>
-              <td class="italic sum">16000</td>
+              <td>LHP N4</td>
+              <td>16 000 €</td>
             </tr> 
-            <tr>
-              <td>Fournisseur X</td>
-              <td class="italic">LHP N4</td>
-              <td class="italic sum">16000</td>
-            </tr>
-            <tr>
-              <td colspan="2" style="text-align: right">Somme :</td>
-              <td class="subtotal"></td>
-            </tr>
             <tr>
               <td>Fournisseur Y</td>
               <td>PROJET Z</td>
-              <td class="sum">1640</td>
+              <td>1 640 €</td>
             </tr> 
             <tr>
               <td>Fournisseur Z</td>
-              <td class="italic">LHP N4</td>
-              <td class="italic sum">1414</td>
+              <td>LHP N4</td>
+              <td>1 414 €</td>
             </tr> 
           </tbody>
 
@@ -178,7 +169,7 @@
     
     <div class="modal-content dark">
         <h2>Bilan des heures par ressource</h2>
-        <table class="table" style="width: 100%">
+        <table id="table-group" class="table" style="width: 100%">
           <thead>
              <tr>
               <th>Ressource</th>
@@ -187,27 +178,28 @@
             </tr> 
           </thead>
 
+          <tfoot>
+  
+          </tfoot>
+
           <tbody>
              <tr>
               <td>Méthodes</td>
-              <td class="italic">LHP N4</td>
-              <td class="italic sum">1616</td>
+              <td>LHP N4</td>
+              <td>1616 h</td>
             </tr> 
             <tr>
               <td>Méthodes</td>
               <td>PROJET Z</td>
-              <td class="sum">166</td>
+              <td>166 h</td>
             </tr> 
-            <tr>
-              <td colspan="2" style="text-align: right">Somme :</td>
-              <td class="subtotal"></td>
-            </tr>
             <tr>
               <td>Bureau d'études</td>
-              <td class="italic">LHP N4</td>
-              <td class="italic sum">140</td>
+              <td>LHP N4</td>
+              <td>140 h</td>
             </tr> 
           </tbody>
+
         </table>
     </div>
 </div>
@@ -263,14 +255,14 @@
 
 		<div class="row">
 
-			<a href="#modal-bilan-commande" id="btn-bilan-commande"><div class="col-md-6 col-sm-12 col-xs-12">
+			<a href="#modal-bilan-heure" id="btn-bilan-heure"><div class="col-md-6 col-sm-12 col-xs-12">
                 <div class="panel back-dash blue">
                        <i class="fa fa-euro fa-3x"></i><strong> &nbsp; BILAN COMMANDES</strong>
                      <p class="text-muted">Cliquez ici pour ouvrir le bilan général concernant les commandes affectées aux fournisseurs. Les filtres peuvent vous guider.</p>
                 </div>
             </div></a>
 
-			<a href="#modal-bilan-heure" id="btn-bilan-heure"><div class="col-md-6 col-sm-12 col-xs-12">
+			<a href="#modal-bilan-commande" id="btn-bilan-commande"><div class="col-md-6 col-sm-12 col-xs-12">
                 <div class="panel back-dash light-orange">
                        <i class="fa fa-clock-o fa-3x"></i><strong> &nbsp; BILAN HEURES</strong>
                      <p class="text-muted">Cliquez ici pour ouvrir le bilan général concernant les heures affectées aux ressources internes. Les filtres peuvent vous guider.</p>
@@ -281,22 +273,6 @@
 	</div>
 </div>
 
-<script type="text/javascript">
-$(function(){
-  function tally (selector) {
-    $(selector).each(function () {
-      var total = 0,
-        column = $(this).siblings(selector).andSelf().index(this);
-      $(this).parents().prevUntil(':has(' + selector + ')').each(function () {
-        total += parseFloat($('td.sum:eq(' + column + ')', this).html()) || 0;
-      })
-      $(this).html(total);
-    });
-  }
-  tally('td.subtotal');
-  tally('td.total');
-});
- 
-</script>
+<script type="text/javascript" src="{{ asset("/js/js_table-group.js") }}"></script>
 
 @endsection

@@ -15,8 +15,6 @@ class CreateRessourceTable extends Migration
         Schema::create('ressource', function (Blueprint $table) {
             $table->increments('id');
             $table->string('r_libelle')->unique();
-            $table->integer('r_id_parent')->default(1);
-            $table->foreign('fk_id_etat')->references('id')->on('etat');
             $table->timestamps();
         });
     }
