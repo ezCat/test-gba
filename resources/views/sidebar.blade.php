@@ -12,20 +12,28 @@
                 </button>
                 <a class="navbar-brand" href="" style="padding-top: 20px;">Cellule Projets</a> 
             </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                  <ul class="nav navbar-nav">
-                    <li><a href="#" class="li-menu-high" style="padding-top: 20px">
-                    <i class="fa fa-plus"></i>Ajouter une affaire 
-                    <span class="sr-only">(current)</span></a></li>
-                    <li><a href="#" class="li-menu-high" style="padding-top: 20px">
-                    <i class="fa fa-refresh"></i>Changer d'affaire
-                    </a></li>
-                  </ul>
-                  <ul class="nav navbar-nav navbar-right">
-                    <li>Déconnexion</li>
-                  </ul>
-                </div>
+
+            <ul class="nav navbar-nav navbar-left">
+                <li style="margin: 10px 10px 0 10px">
+                    <a style="margin: 0; padding:0" href="/public/ajouter/affaire"><button class="btn btn-blue-green"><i class="fa fa-plus"></i> Ajouter un projet</button></a>
+                </li>
+                <li style="margin: 10px 10px 0 10px">
+                    <button class="btn btn-inverse" data-toggle="modal" data-target="#modal-change-projet"><i class="fa fa-refresh"></i> Changer de projet</button>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li  style="margin: 10px 10px 0 10px">
+                    <button class="btn light-orange">LHP N4 </button> 
+                </li>
+                <li style="margin: 0 25px 0 15px">
+                    <select class="form-control" style="margin: 12px 10px 0 0; background-color: transparent; color: #fff;">
+                        <option style="background-color: #4d4d4d; color: #fff">Pas encore débuté</option>
+                        <option style="background-color: #4d4d4d; color: #fff">En cours</option>
+                        <option style="background-color: #4d4d4d; color: #fff">Soldé</option>
+                    </select>
+                </li>
+            </ul>
 
               <!-- Modal change projet -->
               <div class="modal fade" id="modal-change-projet" tabindex="-1" role="dialog" aria-labelledby="modal-change-projet" aria-hidden="true">
@@ -37,7 +45,11 @@
                         </div>
                         <div class="modal-body">
                             <h3>Liste des projets</h3>
-                            <input></input>
+                            <select class="form-control">
+                                <option>Projet 1</option>
+                                <option>Projet 2</option>
+                                <option>Projet 3</option>
+                            </select>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
@@ -54,10 +66,7 @@
                 <ul class="nav" id="main-menu">
 				<li class="text-center">
                     <img src="{{asset('img/suez.png')}}" class="user-image img-responsive"/>
-					</li>
-                    <li>
-                        <a href="/public/ajouter/affaire" id="ajouter"><i class="fa fa-folder-open fa-3x"></i> Ajouter une affaire</a>
-                    </li>	
+					</li>	
                     <li>
                         <a href="/public/saisir/affaire" id="saisie"><i class="fa fa-pencil-square-o fa-3x"></i> Saisie d'une affaire</a>
                     </li>	

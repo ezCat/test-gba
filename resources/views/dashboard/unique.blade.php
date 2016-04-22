@@ -341,6 +341,5 @@
 	</div>
 </div>
 
-<script type="text/javascript" src="{{ asset("/js/js_table-group.js") }}"></script>
 
 @endsection
