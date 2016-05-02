@@ -26,9 +26,9 @@
         <table class="table" style="width: 100%">
           <thead>
              <tr>
-              <th>Nom de l'ensemble</th>
+              <th>Ensemble</th>
               <th>Budget Prévisionnel</th>
-              <th>Budget Réel</th>
+              <th>Dépenses Réelles</th>
               <th>Delta</th>
             </tr> 
           </thead>
@@ -59,7 +59,7 @@
         <table class="table" style="width: 100%">
           <thead>
              <tr>
-              <th>Nom de l'ensemble</th>
+              <th>Ensemble</th>
               <th>Heures Prévisionnelles</th>
               <th>Heures Réelles</th>
               <th>Delta</th>
@@ -104,8 +104,8 @@
         <table id="table-group" class="table" style="width: 100%">
           <thead>
              <tr>
- 			  <th>Nom de la ressource</th>
-              <th>Nom de l'ensemble</th>
+ 			        <th>Ressource</th>
+              <th>Ensemble</th>
               <th>Descriptif de l'heure</th>
               <th>Début</th>
               <th>Fin</th>
@@ -149,8 +149,8 @@
         <table id="table-group" class="table" style="width: 100%">
           <thead>
              <tr>
- 			  <th>Nom de l'ensemble</th>
- 			  <th>Nom de la ressource</th> 
+ 			  <th>Ensemble</th>
+ 			  <th>Ressource</th> 
  			  <th>Descriptif de l'heure</th>
               <th>Début</th>
               <th>Fin</th>
@@ -194,8 +194,8 @@
         <table id="table-group" class="table" style="width: 100%">
           <thead>
              <tr>
-              <th>Nom de l'ensemble</th>
- 			  <th>Nom du fournisseur</th>
+              <th>Ensemble</th>
+ 			  <th>Fournisseur</th>
               <th>Descriptif de la commande</th>
               <th>N° Bon de commande</th>
               <th>Date</th>
@@ -239,8 +239,8 @@
         <table id="table-group" class="table" style="width: 100%">
           <thead>
              <tr>
- 			  <th>Nom du fournisseur</th>
-              <th>Nom de l'ensemble</th>
+ 			  <th>Fournisseur</th>
+              <th>Ensemble</th>
               <th>Descriptif de la commande</th>
               <th>N° Bon de commande</th>
               <th>Date</th>

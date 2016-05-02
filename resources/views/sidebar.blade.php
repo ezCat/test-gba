@@ -23,8 +23,8 @@
             </ul>
 
             <ul class="nav navbar-nav navbar-right">
-                <li  style="margin: 10px 10px 0 10px">
-                    <button class="btn light-orange">LHP N4 </button> 
+                <li  style="margin: 0px 10px 0 10px">
+                    <button class="btn light-orange" style="font-size: 20; height: 58px;"><b>LHP N4</b> </button> 
                 </li>
                 <li style="margin: 0 25px 0 15px">
                     <select class="form-control" style="margin: 12px 10px 0 0; background-color: transparent; color: #fff;">
@@ -53,7 +53,7 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
-                            <button type="button" class="btn btn-primary">Sauvegarder</button>
+                            <button type="button" class="btn btn-primary">Sélectionner</button>
                         </div>
                 </div>
               </div>
@@ -74,19 +74,22 @@
                         <a></a>
                     </li>
                     <li>
-                        <a href="/public/dashboard/general" id="general"><i class="fa fa-money fa-3x"></i> Bilan : Général</a>
-                    </li>	
+                        <a href="/public/dashboard/unique" id="unique"><i class="fa fa-line-chart fa-3x"></i> Bilan du projet</a>
+                    </li>               
                     <li>
-                        <a href="/public/dashboard/unique" id="unique"><i class="fa fa-line-chart fa-3x"></i> Bilan : Affaire Unique</a>
-                    </li>				
+                        <a href="/public/dashboard/master" id="master"><i class="fa fa-tasks fa-3x"></i> Tableau de bord du projet</a>
+                    </li>   
                     <li>
-                        <a href="/public/dashboard/master" id="master"><i class="fa fa-tasks fa-3x"></i> Tableau de bord</a>
+                        <a></a>
+                    </li>
+                    <li>
+                        <a href="/public/dashboard/general" id="general"><i class="fa fa-money fa-3x"></i> Bilan tous projets</a>
                     </li>	
                     <li>
                         <a></a>
                     </li>
                     <li>
-                        <a href=""><i class="fa fa-cogs fa-3x"></i> Besoin d'aide ?</a>
+                        <a href="/public/help"><i class="fa fa-cogs fa-3x"></i> Besoin d'aide ?</a>
                     </li>
                 </ul>
             </div>

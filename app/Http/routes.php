@@ -30,4 +30,8 @@ Route::group(['middleware' => ['web']], function () {
 		return view('dashboard/master');
 	});
 
+	Route::get('help', function(){
+		return view('errors.503');
+	});
+
 });

@@ -55,7 +55,7 @@
              <tr>
               <th>Nom du projet</th>
               <th>Budget Prévisionnel</th>
-              <th>Budget Réel</th>
+              <th>Dépenses Réelles</th>
               <th>Delta</th>
             </tr> 
           </thead>
@@ -212,10 +212,21 @@
     </div>
 </div>
 
-<div  class="col-sm-12">
-<h3>Tableau de bord : Toutes Affaires</h3>
-<hr/>
+<div class="row">
+<div class="col-sm-7">
+  <h3>Tableau de bord : Tous Projets</h3>
 </div>
+
+<div class="col-sm-5" style="text-align: right">
+  Choisir l'état des projets :
+  <select class="form-control" style="display: inline-block; width: auto;">
+    <option>Tous projets</option>
+    <option>Projets soldés</option>
+    <option>Projets en cours</option>
+  </select>
+</div>
+</div>
+<hr/>
 
 <div class="row">
 
