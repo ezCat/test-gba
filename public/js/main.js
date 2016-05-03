@@ -35,7 +35,7 @@ $( document ).ready(function() {
       modalTarget: 'modal-affaire',
         animatedIn:'zoomIn',
         animatedOut:'zoomOut',
-        color:'#34495e'
+        color:'#ecf0f1'
   });
 
 	// MODAL BILAN GENERAL

@@ -2,16 +2,12 @@
 
 Route::group(['middleware' => ['web']], function () {
 
-    Route::get('login', function(){
-		return view('login');
-	});
-
     Route::get('/', function(){
 		return view('dashboard/general');
 	});
 
     Route::get('ajouter/affaire', function(){
-		return view('form/ajouter_affaire');
+		return view('saisie/ajouter_affaire');
 	});
 
     Route::get('saisir/affaire', function(){
